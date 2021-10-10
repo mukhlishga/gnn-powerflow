@@ -55,16 +55,24 @@ Just like CNN, GNN can also be seen as another layer of Deep Learning. We can ap
 
 ![alt text](https://github.com/mukhlishga/gnn-powerflow/blob/main/document/fig12.PNG?raw=true)
 
-This is the models to be compared in the experiment. I made 3 kinds of model. The model 1 consists of 2 traditional fully connected layer. The model 2 consists of 1 GNN layer continued by 1 fully connected layer. The model 3 consists of 2 GNN layer or 2 hops away GNN ended with a fully connected layer. The three models are made to have similar number of parameter, around 26 hundred, because I want to compare the models in an equivalent level. The hyperparameters can be seen in the figure.
+This is the first case of graph data I used, consists of 14 nodes. Each nodes is a PQ bus.
 
 ![alt text](https://github.com/mukhlishga/gnn-powerflow/blob/main/document/fig13.PNG?raw=true)
 
-This is how I generate the dataset. I use digsilent power factory program. I made 102 datasets, each dataset has 2000 data points. From these 102 datasets, I use 1 as train dataset, 1 as validation dataset, and 100 as test dataset.
+And this is the second case of the graph data. Now I add to the graph various size of loops, small loop, medium loop, and big loop. I want to check whether there is any effect of adding loop to the performance of GNN.
 
 ![alt text](https://github.com/mukhlishga/gnn-powerflow/blob/main/document/fig14.PNG?raw=true)
 
-And this is the shape of 1 dataset. So it has 2000 datapoints. Each datapoint consists of 14 rows from the 14 nodes of the graph data. Each node has 2 input features and 2 output features. If we want to use this data structure on the fully connected networks, we have to flatten it first.
+This is the models to be compared in the experiment. I made 3 kinds of model. The model 1 consists of 2 traditional fully connected layer. The model 2 consists of 1 GNN layer continued by 1 fully connected layer. The model 3 consists of 2 GNN layer or 2 hops away GNN ended with a fully connected layer. The three models are made to have similar number of parameter, around 26 hundred, because I want to compare the models in an equivalent level. The hyperparameters can be seen in the figure.
 
 ![alt text](https://github.com/mukhlishga/gnn-powerflow/blob/main/document/fig15.PNG?raw=true)
+
+This is how I generate the dataset. I use digsilent power factory program. I made 102 datasets, each dataset has 2000 data points. From these 102 datasets, I use 1 as train dataset, 1 as validation dataset, and 100 as test dataset.
+
+![alt text](https://github.com/mukhlishga/gnn-powerflow/blob/main/document/fig16.PNG?raw=true)
+
+And this is the shape of 1 dataset. So it has 2000 datapoints. Each datapoint consists of 14 rows from the 14 nodes of the graph data. Each node has 2 input features and 2 output features. If we want to use this data structure on the fully connected networks, we have to flatten it first.
+
+![alt text](https://github.com/mukhlishga/gnn-powerflow/blob/main/document/fig17.PNG?raw=true)
 
 This is the experiment step that I conducted. The result of this experiment can be completely seen in the report document.
