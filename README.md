@@ -1,5 +1,7 @@
 # gnn-powerflow
 
+This project is about Graph Neural Network application in power system analysis. This is my Master Thesis at TU Eindhoven. This project is intended to compare the performance of Graph Neural Network (GNN) vs traditional Multi Layer Perceptron (MLP) model for a same model complexity. The main question is, does leveraging data topology improve model accuracy? This project is developed using pytorch framework in Jupyter Notebook IDE. Initially, the graph neural network model is programmed from scratch. In the mid progress, I utilize pytorch-geometric library to simplify the process and add more built-in optimizations. You can grasp the main backbone ideas of my thesis in the following explanation.
+
 Integrating Power Grid Topology in Graph Neural Networks for Power Flow.
 
 Recent advances in Neural Network (NN) offer an interesting opportunity to integrate graph topology in a Neural Network system. This framework is called Graph Neural Network (GNN). In power systems, an electrical power grid can be represented as a graph with high dimensional features and interdependency among buses. This perspective may offer a better state of the art machine learning for power systems analysis. This study seeks the opportunity to integrate power grid topology in the GNN framework for power flow application. A comparison between several GNN architectures with equivalent model complexities are discussed. The comparison is also done for various dataset sizes.
