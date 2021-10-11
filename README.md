@@ -68,8 +68,9 @@ This is how I generate the dataset. I use DIgSILENT PowerFactory 2020. I made 10
 
 ![alt text](https://github.com/mukhlishga/gnn-powerflow/blob/main/document/fig16.PNG?raw=true)
 
-And this is the shape of 1 dataset. So it has 2000 datapoints. Each datapoint consists of 14 rows from the 14 nodes of the graph data. Each node has 2 input features and 2 output features. If we want to use this data structure on the fully connected networks, we must flatten it first.
+This is the shape of 1 dataset. Each dataset has 2000 datapoints. Each datapoint consists of 14 rows from the 14 nodes of the graph data. Each node has 2 input features and 2 output features. If we want to use this data structure on the fully connected networks, we must flatten it first.
 
 ![alt text](https://github.com/mukhlishga/gnn-powerflow/blob/main/document/fig17.PNG?raw=true)
 
-This is the experiment steps that I conducted. The complete result can be seen in the report document.
+This is the experiment steps that I conducted. The complete result can be seen in the report document:
+https://github.com/mukhlishga/gnn-powerflow/blob/main/document/Integrating%20Power%20Grid%20Topology%20in%20Graph%20Neural%20Networks%20for%20Power%20Flow.pdf
